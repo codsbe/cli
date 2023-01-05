@@ -1,0 +1,35 @@
+{
+  "name": "@codsbe/cli",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["CLI", "codsbe", "codsbe-cli","React","React Native","React Native CLI"],
+  "description": "Cil for init project",
+  "author": "CodsBe <info@codsbe.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codsbe/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codsbe/cli/issues"
+  },
+  "homepage": "https://github.com/codsbe/cli#readme",
+
+  "dependencies": {
+    "cli-spinners": "^2.7.0",
+    "kleur": "^4.1.5",
+    "ora": "^5.3.0",
+    "process": "^0.11.10",
+    "prompts": "^2.4.2",
+    "replace-in-file": "^6.3.5",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "npx-run": "^2.1.2"
+  },
+  "bin": {
+    "@codsbe/cli": "bin/index.js"
+  }
+}
