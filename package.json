@@ -1,11 +1,24 @@
 {
   "name": "@codsbe/cli",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "license": "MIT",
-  "keywords": ["CLI", "codsbe", "codsbe-cli","React","React Native","React Native CLI"],
+  "keywords": [
+    "CLI",
+    "codsbe",
+    "codsbe-cli",
+    "React",
+    "React Native",
+    "React Native CLI"
+  ],
   "description": "Cil for init project",
   "author": "CodsBe <info@codsbe.com>",
   "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:write": "eslint --debug src/ --fix --no-error-on-unmatched-pattern",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +29,6 @@
     "url": "https://github.com/codsbe/cli/issues"
   },
   "homepage": "https://github.com/codsbe/cli#readme",
-
   "dependencies": {
     "cli-spinners": "^2.7.0",
     "kleur": "^4.1.5",
@@ -27,9 +39,29 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "npx-run": "^2.1.2"
+    "@codsbe/eslint-config": "^1.0.1",
+    "@types/node": "^18.11.18",
+    "@types/prompts": "^2.4.2",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "npx-run": "^2.1.2",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   },
   "bin": {
-    "@codsbe/cli": "bin/index.js"
+    "@codsbe/cli": "lib/bin/index.js"
   }
 }
