@@ -1,6 +1,6 @@
 {
   "name": "@codsbe/cli",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "license": "MIT",
   "keywords": [
     "CLI",
@@ -36,7 +36,8 @@
     "process": "^0.11.10",
     "prompts": "^2.4.2",
     "replace-in-file": "^6.3.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "tslib": "^2.4.1"
   },
   "devDependencies": {
     "@codsbe/eslint-config": "^1.0.1",
